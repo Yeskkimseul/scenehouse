@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: clamp(30px, 10vh, 80px);
+    margin-bottom: var(--space80);
 }
 
 .rieview-bg .review .myReview {

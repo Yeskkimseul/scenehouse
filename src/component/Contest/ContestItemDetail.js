@@ -7,6 +7,11 @@ import X from '../../img/X.svg';
 import Pen from '../../img/pen.svg';
 import Review from '../CommonItem/Review.js';
 import Gallery from '../CommonItem/Gallery.js';
+import VideoSlide from '../CommonItem/VideoSlide.js';
+import Cast from '../CommonItem/Cast.js';
+
+import gallery1 from '../../img/gallery/gallery1.png'
+import vidoslide1 from '../../img/videoslide/videoslide1.png'
 
 function ContestItemDetail() {
 
@@ -36,7 +41,7 @@ function ContestItemDetail() {
               </div>
             </li>
             <li>
-               <img src={Pen} alt='pen'></img>
+              <img src={Pen} alt='pen'></img>
               <div className='b8'>
                 리스트에 추가
               </div>
@@ -47,8 +52,19 @@ function ContestItemDetail() {
           </div>{/* descriptionText */}
         </div>{/* description */}
       </div>{/* contentBox */}
-    <Review />
-    <Gallery />
+      <Review />
+      <Gallery imgList={[gallery1, gallery1, gallery1, gallery1, gallery1, gallery1]} />
+      <Cast />
+      <VideoSlide
+        imgList={[
+          { src: vidoslide1, text: '슬라이드 1 설명 텍스트' },
+          { src: vidoslide1, text: '슬라이드 2 설명 텍스트' },
+          { src: vidoslide1, text: '슬라이드 3 설명 텍스트' },
+          { src: vidoslide1, text: '슬라이드 4 설명 텍스트' },
+          { src: vidoslide1, text: '슬라이드 5 설명 텍스트' },
+          { src: vidoslide1, text: '슬라이드 6 설명 텍스트' },
+        ]}
+      />
     </div>
 
 

@@ -188,6 +188,8 @@ button {
     --button1-size: clamp(16px, 1.6vw, 20px);
     --button2-size: clamp(14px, 1.5vw, 18px);
 
+    --space80 :clamp(30px, 10vh, 80px);
+    --space40: clamp(20px, 5vw, 40px);
 }
 
 h2 {
