@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './component/Header';
+import './style/common.css';
+import Home from './pages/Home/Home';
+import All from './pages/All/All';
+import Contest from './pages/Contest/Contest';
+import UploadDashboard from './pages/Contest/UploadDashboard';
+import Game from './pages/Game/Game';
+import Setting from './pages/Setting/Setting';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/All' element={<All />} />
+
+        <Route path='/Contest' element={<Contest />} />
+        <Route path='/Contest/UploadDashboard' element={<UploadDashboard />} />
+
+        <Route path='/Game' element={<Game />} />
+        <Route path='/Setting' element={<Setting />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
