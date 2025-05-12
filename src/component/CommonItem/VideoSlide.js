@@ -11,7 +11,7 @@ const VideoSlide = ({ imgList }) => {
         <div className="VideoSlide-wrapper">
             <div className="VideoSlideBg">
                 <div className="VideoSlide">
-                    <h2>갤러리</h2>
+                    <h2>비슷한 추천작들</h2>
                     <Swiper
                         modules={[Pagination, Navigation]}
                         spaceBetween={32}

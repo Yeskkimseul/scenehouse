@@ -12,6 +12,7 @@ import Cast from '../CommonItem/Cast.js';
 
 import gallery1 from '../../img/gallery/gallery1.png'
 import vidoslide1 from '../../img/videoslide/videoslide1.png'
+import castmember1 from '../../img/castmember/castmember1.png'
 
 function ContestItemDetail() {
 
@@ -54,7 +55,18 @@ function ContestItemDetail() {
       </div>{/* contentBox */}
       <Review />
       <Gallery imgList={[gallery1, gallery1, gallery1, gallery1, gallery1, gallery1]} />
-      <Cast />
+      <Cast
+        castList={[
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+          { img: castmember1, name: '정도영', role: '감독' },
+        ]}
+      />
       <VideoSlide
         imgList={[
           { src: vidoslide1, text: '슬라이드 1 설명 텍스트' },

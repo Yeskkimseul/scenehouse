@@ -1,0 +1,38 @@
+
+
+.footer{
+    width: 100%;
+    padding: clamp(40px, 6vw, 62px) clamp(60px, 8vw, 100px) clamp(20px, 4vw, 30px);
+}
+
+.footer .topfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(8px, 1.5vh, 16px) clamp(20px, 5vw, 100px);
+}
+.footer .topfooter > img{
+    width: clamp(164px,16vw,200px);
+    height: auto;
+}
+.footer .topfooter .info{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px,5vw,20px);
+}
+.footer .topfooter .info li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: clamp(10px,5vw,20px);
+}
+.footer .topfooter .info li img{
+    width: clamp(16px,6vw,30px);
+    height: auto;
+}
+.footer .topfooter .info li div{}
+.footer .topfooter .fnav{}
+.footer .topfooter .fnav li{}
+.footer .topfooter .fnav li h6{}
+.footer .copy{}
+.footer .copy .ft{}

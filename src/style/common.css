@@ -164,8 +164,8 @@ button {
     --gray2: #4C4C4C;
     --black: #111;
     --white: #fff;
-    --white-l : #f1f1f1;
-    --red : #D82121;
+    --white-l: #f1f1f1;
+    --red: #D82121;
 
     /* Heading Sizes */
     --h2-size: clamp(30px, 4vw, 50px);
@@ -184,11 +184,14 @@ button {
     --body7-size: clamp(16px, 1.6vw, 20px);
     --body8-size: clamp(14px, 1.4vw, 16px);
 
+    /* Footer Text Sizes */
+    --footer-size: clamp(16px, 2vw, 24px);
+
     /* Button Text Sizes */
     --button1-size: clamp(16px, 1.6vw, 20px);
     --button2-size: clamp(14px, 1.5vw, 18px);
 
-    --space80 :clamp(30px, 10vh, 80px);
+    --space80: clamp(30px, 10vh, 80px);
     --space40: clamp(20px, 5vw, 40px);
 }
 
@@ -270,11 +273,16 @@ h6 {
     line-height: 130%;
 }
 
+.ft {
+    font-size: var(--footer-size);
+    font-weight: 100;
+    line-height: 130%;
+}
+
 body {
     font-family: var(--pretendard);
     color: var(--black);
     background-color: var(--sub-color);
     overflow-y: scroll;
-      overflow-x: hidden;
+    overflow-x: hidden;
 }
-

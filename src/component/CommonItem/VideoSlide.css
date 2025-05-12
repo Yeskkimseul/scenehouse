@@ -1,5 +1,4 @@
 .VideoSlide-wrapper {
-
     width: 100%;
     position: relative;
 }
@@ -13,6 +12,7 @@
 
 .VideoSlideBg .VideoSlide {
     height: fit-content;
+    padding: clamp(40px, 6vw, 96px) 0;
     color: var(--white);
     position: relative;
 }
