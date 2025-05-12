@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './component/Header';
 import './style/common.css';
 import Home from './pages/Home/Home';
@@ -10,7 +10,7 @@ import Setting from './pages/Setting/Setting';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path='/Game' element={<Game />} />
         <Route path='/Setting' element={<Setting />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
