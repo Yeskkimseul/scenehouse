@@ -7,5 +7,5 @@
 .tab-content {
     width: 100%;
     margin-top: clamp(26px, 3vw, 36px);
-    height: 100vh;
+    height: auto;
 }

@@ -194,6 +194,9 @@ button {
     --space80: clamp(30px, 10vh, 80px);
     --space60: clamp(26px, 8vw, 60px);
     --space40: clamp(20px, 5vw, 40px);
+
+    --icon30: clamp(18px, 2vw, 30px);
+    --icon34: clamp(20px, 2vw, 34px);
 }
 
 h2 {
@@ -280,18 +283,22 @@ h6 {
     line-height: 130%;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+     padding: 0;
 }
+
 .AppLayout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .MainContent {
-  flex: 1;
+    flex: 1;
 }
 
 body {
@@ -300,4 +307,17 @@ body {
     background-color: var(--white-l);
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+/* 최상위 레이아웃 */
+.AppLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 전체 뷰포트 높이만큼 */
+}
+
+/* 메인 콘텐츠가 남은 공간을 채움 */
+.MainContent {
+    flex: 1;
 }
