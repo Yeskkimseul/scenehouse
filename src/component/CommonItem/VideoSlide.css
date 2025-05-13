@@ -27,15 +27,17 @@
     position: relative;
 }
 
-.VideoSlideBg .VideoSlide Swiper .swiper-slide {
-}
-.imgbox{
+.VideoSlideBg .VideoSlide Swiper SwiperSlide {}
+
+.imgbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--space40);
+    cursor: pointer;
 }
+
 .swiper-pagination {
     position: absolute;
     bottom: 300px;

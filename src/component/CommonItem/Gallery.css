@@ -28,7 +28,10 @@
     position: relative;
 }
 
-.galleryBg .gallery Swiper .swiper-slide {}
+.galleryBg .imgbox {
+
+    cursor: pointer;
+}
 
 
 .navigation_btn {

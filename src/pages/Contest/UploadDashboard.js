@@ -19,7 +19,8 @@ function UploadDashboard() {
 
   return (
     <div className="UploadDashboard" style={{ minHeight: '100vh' }}>
-      <UploadTabs activeTab={activeTab} setActiveTab={handleTabChange}>
+      <UploadTabs activeTab={activeTab} setActiveTab={handleTabChange}
+        setShowGuide={setShowGuide}>
         <div label="대시보드" data-bg="upload-bg">
           {showGuide ? (
             <UploadGuide goToTab={handleStartUpload} />
@@ -28,7 +29,8 @@ function UploadDashboard() {
           )}
         </div>
         <div label="작품 관리" data-bg="uploadlist-bg">
-          <UploadList />
+          <UploadList setActiveTab={handleTabChange}
+            setShowGuide={setShowGuide} />
         </div>
       </UploadTabs>
       <Footer style={{ backgroundColor: 'var(--white)' }} />
