@@ -279,6 +279,20 @@ h6 {
     line-height: 130%;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+.AppLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.MainContent {
+  flex: 1;
+}
+
 body {
     font-family: var(--pretendard);
     color: var(--black);

@@ -2,7 +2,7 @@ import React from "react";
 import "./UploadGuide.css";
 import Button from "../Button/Button";
 
-const UploadGuide = () => {
+const UploadGuide = ({ goToTab }) => {
     return (
         <div className="UploadGuideWrap">
             <div className="GuideTop"></div>
@@ -13,7 +13,7 @@ const UploadGuide = () => {
                     작지만 강한 한 편의 영상이 누군가의 마음을 울릴 수 있습니다.<br />
                     당신만의 시선을 담은 작품, 씬 하우스와 함께 다른사람들과 공유해 주세요.
                 </div>
-                <Button type="bigbt_neg">작품 등록</Button>
+                <Button type="bigbt_neg" onClick={goToTab}>작품 등록</Button>
 
             </div>
         </div>

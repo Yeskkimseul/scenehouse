@@ -11,6 +11,20 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: color 0.2s, border-color 0.2s;
+    transition: background-color 0.3s ease;
+}
+
+/* 탭별 배경색 */
+.Uploadtabs.uploadGuid-bg {
+    background: var(--white);
+}
+
+.Uploadtabs.upload-bg {
+    background-color: var(--white-l);
+}
+
+.Uploadtabs.uploadlist-bg {
+    background-color: var(--white-l);
 }
 
 .Uploadtab.active {
@@ -38,4 +52,10 @@
     width: 100%;
     margin-top: clamp(26px, 3vw, 36px);
     height: fit-content;
+    padding: 0 clamp(16px, 8vw, 100px) clamp(24px, 4vw, 50px);
+}
+
+.Uploadtabs.upload-active {
+    background-color: var(--white-l);
+    /* Upload 모드일 때 */
 }

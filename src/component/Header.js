@@ -8,12 +8,11 @@ import user from "../img/user.svg";
 import ham from "../img/ham.svg";
 
 function Header() {
-
     const location = useLocation();
     const isUploadDashboard = location.pathname === '/Contest/UploadDashboard';
 
-   return (
-        <div className={`header ${isUploadDashboard ? 'upload-header' : ''}`}>
+    return (
+        <div className={`header ${isUploadDashboard ? 'UploadDashboard-header' : ''}`}>
             <div className="top">
                 <div className="nav">
                     <NavLink className="MainLogo" to={'/'}>

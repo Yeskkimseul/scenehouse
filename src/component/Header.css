@@ -1,10 +1,8 @@
-
-.header{
+.header {
     width: 100%;
-
 }
 
-.top{
+.top {
     width: 100%;
     height: clamp(80px, 12vw, 122px);
     position: sticky;
@@ -14,20 +12,20 @@
     padding: clamp(12px, 2vw, 18px) clamp(40px, 6vw, 100px) 0 clamp(40px, 6vw, 100px);
 }
 
-.top .nav{
+.top .nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: clamp(4px, 2vw, 20px);
 }
 
-.top .nav .MainLogo img{
+.top .nav .MainLogo img {
     width: clamp(120px, 20vw, 160px);
     aspect-ratio: 16 / 9;
     height: auto;
 }
 
-.top .nav .gnb{
+.top .nav .gnb {
     display: flex;
     gap: clamp(16px, 4vw, 36px);
     align-items: center;
@@ -35,19 +33,19 @@
     padding-bottom: clamp(8px, 2vw, 16px);
 }
 
-.top .nav .gnb a{
+.top .nav .gnb a {
     transition: 0.3s linear;
 }
 
-.top .nav .gnb a:hover{
+.top .nav .gnb a:hover {
     color: var(--black);
 }
 
-.top .nav .gnb .active{
+.top .nav .gnb .active {
     color: var(--black);
 }
 
-.top .lefticon{
+.top .lefticon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,30 +53,39 @@
     padding-bottom: clamp(8px, 2vw, 16px);
 }
 
-.top .lefticon img{
+.top .lefticon img {
     width: clamp(20px, 4vw, 34px);
     aspect-ratio: 1 / 1;
     cursor: pointer;
 }
-.top .hamMenu{
+
+.top .hamMenu {
     display: none;
     width: clamp(20px, 4vw, 34px);
     aspect-ratio: 1 / 1;
     cursor: pointer;
 }
 
-.upload-header {
-  background-color: var(--white);
+.UploadDashboard-header {
+    background-color: var(--white);
+}
+
+.upload-header{
+    background-color: var(--white-l);
+}
+
+.uploadlist-header{
+    background-color: var(--white-l);
 }
 
 @media (max-width: 750px) { 
-    .top .nav .gnb{
+    .top .nav .gnb {
         display: none;
     }
-    .top .lefticon{
+    .top .lefticon {
         display: none;
     }
-    .top .hamMenu{
+    .top .hamMenu {
         display: block;
     }
-} 
+}

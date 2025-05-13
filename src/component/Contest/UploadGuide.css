@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     margin-top: clamp(16px, 3vw, 30px);
+    background: var(--white);
 }
 
 .UploadGuideWrap .GuideTop {

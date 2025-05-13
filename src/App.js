@@ -7,23 +7,23 @@ import Contest from './pages/Contest/Contest';
 import UploadDashboard from './pages/Contest/UploadDashboard';
 import Game from './pages/Game/Game';
 import Setting from './pages/Setting/Setting';
-import Footer from './component/Footer';
 
 function App() {
   return (
     <HashRouter>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/All' element={<All />} />
-
-        <Route path='/Contest' element={<Contest />} />
-        <Route path='/Contest/UploadDashboard' element={<UploadDashboard />} />
-
-        <Route path='/Game' element={<Game />} />
-        <Route path='/Setting' element={<Setting />} />
-      </Routes>
-      <Footer />
+      <div className="AppLayout">
+        <Header />
+        <main className="MainContent">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/All' element={<All />} />
+            <Route path='/Contest' element={<Contest />} />
+            <Route path='/Contest/UploadDashboard' element={<UploadDashboard />} />
+            <Route path='/Game' element={<Game />} />
+            <Route path='/Setting' element={<Setting />} />
+          </Routes>
+        </main>
+      </div>
     </HashRouter>
   );
 }

@@ -9,6 +9,7 @@ import Review from '../CommonItem/Review.js';
 import Gallery from '../CommonItem/Gallery.js';
 import VideoSlide from '../CommonItem/VideoSlide.js';
 import Cast from '../CommonItem/Cast.js';
+import Footer from '../Footer.js';
 
 import gallery1 from '../../img/gallery/gallery1.png'
 import vidoslide1 from '../../img/videoslide/videoslide1.png'
@@ -77,6 +78,7 @@ function ContestItemDetail() {
           { src: vidoslide1, text: '슬라이드 6 설명 텍스트' },
         ]}
       />
+      <Footer />
     </div>
 
 
