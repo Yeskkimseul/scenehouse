@@ -67,5 +67,5 @@
     font-size: var(--button2-size);
     font-weight: 600;
     border: 1px solid var(--main-color);
-    background-color: none;
+    background: none;
 }

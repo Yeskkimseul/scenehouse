@@ -4,6 +4,7 @@ import Button from '../../component/Button/Button';
 import './Contest.css';
 import ContestList from '../../component/Contest/ContestList';
 import ContestItemDetail from '../../component/Contest/ContestItemDetail';
+import Casting from '../../component/Contest/Casting';
 
 
 
@@ -11,6 +12,13 @@ import ContestItemDetail from '../../component/Contest/ContestItemDetail';
 function Contest() {
   const [viewDetail, setViewDetail] = useState(false);
 
+  useEffect(() => {
+    document.body.classList.add('Contest');
+    return () => {
+      document.body.classList.remove('Contest');
+    };
+  }, []);
+  
   return (
     <div className='Contest'>
       <div className='toptab'>
@@ -23,7 +31,7 @@ function Contest() {
             )}
           </div>
           <div label="팀원 모집">
-            <p>탭2 내용입니다</p>
+            <Casting />
 
           </div>
         </Tabs>

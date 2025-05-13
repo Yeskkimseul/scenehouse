@@ -27,7 +27,7 @@
 .rieview-bg .review .myReview {
        flex-shrink: 0;
     display: flex;
-    padding: clamp(6px, 2vh, 12px) clamp(10px, 1vw, 20px);
+    padding:  clamp(18px, 3vw, 26px) clamp(6px, 2vh, 12px);
     gap: clamp(20px, 2vw, 40px);
     justify-content: center;
     align-items: center;

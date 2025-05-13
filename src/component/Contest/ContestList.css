@@ -118,7 +118,7 @@
 .contestlistDetail .explanation {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: clamp(20px, 3vw, 30px);
 }
 
 .contestlistDetail .explanation li {

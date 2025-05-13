@@ -297,7 +297,7 @@ html, body, #root {
 body {
     font-family: var(--pretendard);
     color: var(--black);
-    background-color: var(--sub-color);
+    background-color: var(--white-l);
     overflow-y: scroll;
     overflow-x: hidden;
 }

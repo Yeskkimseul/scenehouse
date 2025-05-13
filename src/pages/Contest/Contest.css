@@ -13,3 +13,7 @@
     position: absolute;
     right: clamp(20px, 5vw, 100px); top: clamp(8px, 2vw, 16px);
 }
+
+body.Contest {
+  background: var(--sub-color);
+}
