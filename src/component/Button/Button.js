@@ -3,7 +3,7 @@ import "./Button.css";
 
 const Button = ({children, type, onClick, to}) => {
     const Navigate = useNavigate();
-    const btnType = ['bigbt_neg','bigbt_pos','sm_check','gobtn','upload'].includes(type) ? type : 'default';
+    const btnType = ['bigbt_neg','bigbt_pos','sm_check','gobtn','blackmidbtn','whitemidbtn','upload'].includes(type) ? type : 'default';
 
     const handleClick = () => {
         if(to) {

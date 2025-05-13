@@ -50,3 +50,22 @@
     height: clamp(40px, 5vw, 56px);
     background: var(--point-color);
 }
+
+.Button_blackmidbtn {
+    width: clamp(98px, 9vw, 140px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    color: var(--white);
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.Button_whitemidbtn {
+    width: clamp(98px, 9vw, 140px);
+    height: clamp(36px, 5vw, 46px);
+    font-size: var(--button2-size);
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    background-color: none;
+}

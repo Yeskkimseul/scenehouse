@@ -11,23 +11,6 @@ import ContestItemDetail from '../../component/Contest/ContestItemDetail';
 function Contest() {
   const [viewDetail, setViewDetail] = useState(false);
 
-  useEffect(() => {
-    const body = document.body;
-
-    if (!viewDetail) {
-      // ContestList일 때: 스크롤 막고 스크롤바는 유지
-      body.classList.add('scroll-lock');
-    } else {
-      // ContestItemDetail일 때: 스크롤 원상복구
-      body.classList.remove('scroll-lock');
-    }
-
-    return () => {
-      body.classList.remove('scroll-lock');
-    };
-  }, [viewDetail]);
-
-
   return (
     <div className='Contest'>
       <div className='toptab'>

@@ -5,9 +5,9 @@ import logo from "../../src/img/scenelogo.svg"
 import map from "../../src/img/mapicon.svg"
 import phone from "../../src/img/phoneicon.svg"
 
-function Footer() {
+function Footer({style}) {
     return (
-        <div className="footer">
+        <div className="footer"  style={style}>
             <div className="topfooter">
                 <img src={logo} alt="scene-house"></img>
                 <ul className="info">

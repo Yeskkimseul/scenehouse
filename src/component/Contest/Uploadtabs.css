@@ -20,11 +20,11 @@
 }
 
 .Uploadtabs.upload-bg {
-    background-color: var(--white-l);
+    background-color: var(--white);
 }
 
 .Uploadtabs.uploadlist-bg {
-    background-color: var(--white-l);
+    background-color: var(--white);
 }
 
 .Uploadtab.active {
@@ -55,7 +55,5 @@
     padding: 0 clamp(16px, 8vw, 100px) clamp(24px, 4vw, 50px);
 }
 
-.Uploadtabs.upload-active {
-    background-color: var(--white-l);
-    /* Upload 모드일 때 */
-}
+
+

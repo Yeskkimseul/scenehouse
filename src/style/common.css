@@ -192,6 +192,7 @@ button {
     --button2-size: clamp(14px, 1.5vw, 18px);
 
     --space80: clamp(30px, 10vh, 80px);
+    --space60: clamp(26px, 8vw, 60px);
     --space40: clamp(20px, 5vw, 40px);
 }
 
