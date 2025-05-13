@@ -51,14 +51,12 @@
 .rieview-bg .review .userReview {
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 20vh, 50px);
-    margin-top: clamp(20px, 20vh, 50px);
 }
 
 .rieview-bg .review .userReview li {
     display: flex;
     color: var(--white);
-    padding: clamp(6px, 2vh, 12px) clamp(10px, 1vw, 20px);
+    padding:  clamp(18px, 3vw, 26px) clamp(6px, 2vh, 12px);
     border-bottom: 1px solid var(--sub-color);
     justify-content: center;
     align-items: center;

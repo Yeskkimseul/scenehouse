@@ -3,3 +3,27 @@
     background: var(--white);
     padding: clamp(24px, 5vw, 50px) clamp(20px, 10vw, 415px);
 }
+
+.uploadCon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space40);
+    padding: clamp(24px, 5vw, 50px) 0;
+}
+
+.uploadCon section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(14px,10vw,26px);
+}
+
+input.textinput{
+    height: clamp(40px, 5vw, 56px);
+    border-radius: 10px;
+    border-color: var(--light-gray2);
+    padding: clamp(8px,2vw,12px);
+    font-size: var(--body8-size);
+    color: var(--light-gray2);
+}
