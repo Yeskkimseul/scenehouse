@@ -193,7 +193,11 @@ button {
 
     --space80: clamp(30px, 10vh, 80px);
     --space60: clamp(26px, 8vw, 60px);
+    --space50: clamp(24px, 5vh, 50px);
     --space40: clamp(20px, 5vw, 40px);
+    --space24: clamp(12px, 3vw, 24px);
+    --space10: clamp(6px, 1vw, 10px);
+
 
     --icon30: clamp(18px, 2vw, 30px);
     --icon34: clamp(20px, 2vw, 34px);
@@ -288,7 +292,7 @@ body,
 #root {
     height: 100%;
     margin: 0;
-     padding: 0;
+    padding: 0;
 }
 
 .AppLayout {
